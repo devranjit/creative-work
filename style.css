@@ -1,0 +1,156 @@
+
+*{
+     font-family: 'DM Sans', sans-serif;
+
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.section{
+    background-color: #F6F3EB;
+    max-width: 100%;
+}
+
+.container{
+max-width: 1200px;
+margin: auto;
+}
+
+
+/* ---------header style start from here ----------------- */
+
+.header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0; 
+
+}
+
+
+.header-menu{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.header-menu a{
+    color: #646D6C;
+}
+
+.header-menu a:hover{
+    color:#0A8270;
+}
+
+.header-menu a:active{
+color: #0A8270;
+font-weight: 600;
+}
+
+
+
+.header-menu li{
+    list-style-type: none;
+
+}
+
+.header-menu li a{
+    text-decoration: none;
+  
+}
+
+.header-button{
+    padding: 20px 30px;
+    background-color:#0A8270 ;
+    border: none;
+   
+}
+.header-button a{
+    text-decoration: none;
+    font-size: 15px;
+    color: #fff;
+    
+}
+
+/* this is header responsive code  */
+
+
+@media (max-width: 768px) {
+    .header-section{
+        flex-direction: column;
+    }
+    .header-menu{
+        text-align: center;
+    }
+    .header-menu li{
+        margin: 10px 0;
+    }
+    .header-button{
+        margin-top: 20px;
+    }
+}
+
+
+/* Header responsive code ends here  */
+
+
+/* hero section start here */
+
+
+.hero-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 25x;
+}
+
+.hero-section h1{
+    color: #314D4A;
+font-family: DM Sans;
+font-size: 70px;
+font-style: normal;
+font-weight: 700;
+line-height: 80px; /* 114.286% */
+letter-spacing: -1.4px;
+}
+
+.hero-section p{
+    color: #646D6C;
+    font-family: DM Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 166.667% */ 
+}
+
+.hero-section button{
+    margin: 15px 0;
+}
+
+
+
+@media (max-width: 768px) {
+    .hero-section {
+        flex-direction: column; 
+    }
+
+    .hero-section > div {
+        text-align: center; 
+    }
+
+    .header-button {
+        margin-top: 20px; 
+    }
+}
